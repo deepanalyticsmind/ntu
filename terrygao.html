@@ -128,7 +128,7 @@
         <p><span class="label">Verification:</span> This badge is Open Badge compliant and issued via Private LMS.</p>
       </div>
       <div class="footer">
-        © 2025 KM Technologies · All rights reserved
+        © <span id="current-year"></span> KM Technologies · All rights reserved
       </div>
     </div>
 
@@ -182,6 +182,7 @@
         alert("Credential URL copied to clipboard!");
       });
     }
+    document.getElementById("current-year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
