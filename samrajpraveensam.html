@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KM6305 Honour Speaker Badge</title>
+  <title>KM6305 Honour Speaker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
@@ -119,16 +119,16 @@
   <div class="overlay">
     <div class="container">
       <img src="Honour Speaker.png" alt="Honour Speaker Badge" class="badge-image">
-      <h1>Honour Speaker Badge</h1>
+      <h1>Honour Speaker</h1>
       <div class="info">
         <p><span class="label">Issued by:</span> KM Technologies</p>
         <p><span class="label">Criteria:</span> Awarded by NTU WKWSCI Knowledge Management Technologies</p>
-        <p><span class="label">Date:</span> 5 September 2025</p>
+        <p><span class="label">Date:</span> 4 September 2025</p>
         <p><span class="label">Recipient:</span> Samraj Praveen Sam</p>
         <p><span class="label">Verification:</span> This badge is Open Badge compliant and issued via Private LMS.</p>
       </div>
       <div class="footer">
-        © 2025 KM Technologies · All rights reserved
+        © <span id="current-year"></span> KM Technologies · All rights reserved
       </div>
     </div>
 
@@ -138,13 +138,38 @@
         <button>➕ Add to LinkedIn</button>
       </a>
       <div class="linkedin-details" style="text-align: center;">
-        <p><strong>Badge Name:</strong> Honour Speaker Badge</p>
+        <p><strong>Badge Name:</strong> Honour Speaker</p>
         <p><strong>Issuing Organization:</strong> KM Technologies</p>
-        <p><strong>Issue Date:</strong> September 2025</p>
+        <p><strong>Issue Date:</strong> 4 September 2025</p>
         <p><strong>Credential URL:</strong> <span id="copy-url">https://certs.damind.com/samrajpraveensam.html</span></p>
         <button onclick="copyToClipboard()" class="copy-button">📋 Copy Credential URL</button>
       </div>
     </div>
+
+<div class="container" style="margin-top: 2rem;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #003366; margin-bottom: 1rem;">Honour Speaker Gallery</h2>
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  ">
+    <div style="flex: 1 1 100%; max-width: 300px; text-align: center;">
+      <img src="SamRG0.png" alt="Honour Speaker Image 1" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+    <div style="flex: 1 1 100%; max-width: 300px; text-align: center;">
+      <img src="SamRG1.png" alt="Honour Speaker Image 2" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+    <div style="flex: 1 1 100%; max-width: 300px; text-align: center;">
+      <img src="SamRG3.png" alt="Honour Speaker Image 3" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+    <div style="flex: 1 1 100%; max-width: 300px; text-align: center;">
+      <img src="SamRG4.png" alt="Honour Speaker Image 4" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+</div>
+
+    
   </div>
 
   <script>
@@ -154,6 +179,7 @@
         alert("Credential URL copied to clipboard!");
       });
     }
+    document.getElementById("current-year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
