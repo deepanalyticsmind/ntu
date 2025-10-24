@@ -70,6 +70,34 @@
       <div class="footer">
         © 2025 KM Technologies · All rights reserved
       </div>
+
+<div style="margin-top: 2rem; padding: 1.5rem; background-color: #f4f8fc; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-family: 'Segoe UI', sans-serif;">
+  <h2 style="color: #0077b5; font-size: 1.4rem;">Add this badge to your LinkedIn profile</h2>
+  <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION" target="_blank" style="text-decoration: none;">
+    <button style="background-color: #0077b5; color: white; border: none; padding: 0.6rem 1.2rem; font-size: 1rem; border-radius: 6px; cursor: pointer;">
+      ➕ Add to LinkedIn
+    </button>
+  </a>
+  <div style="margin-top: 1rem; font-size: 0.95rem; color: #333;">
+    <p><strong>Badge Name:</strong> Honour Speaker Badge</p>
+    <p><strong>Issuing Organization:</strong> KM Technologies</p>
+    <p><strong>Issue Date:</strong> September 2025</p>
+    <p><strong>Credential URL:</strong> <span id="copy-url">https://certs.damind.com/samrajpraveensam.html</span></p>
+    <button onclick="copyToClipboard()" style="margin-top: 0.5rem; background-color: #e1ecf4; border: none; padding: 0.4rem 0.8rem; font-size: 0.85rem; border-radius: 4px; cursor: pointer;">
+      📋 Copy Credential URL
+    </button>
+  </div>
+</div>
+
+<script>
+  function copyToClipboard() {
+    const url = document.getElementById("copy-url").textContent;
+    navigator.clipboard.writeText(url).then(() => {
+      alert("Credential URL copied to clipboard!");
+    });
+  }
+</script>
+      
     </div>
   </div>
 </body>
